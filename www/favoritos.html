@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Favoritos - GreenTech</title>
+    <!-- ICONE ABA -->
+    <link rel="shortcut icon" href="img/robo.jpg" type="image/x-icon">
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/detalhes.css">
+    <link rel="stylesheet" href="css/carrinho.css">
+    <link rel="stylesheet" href="css/favoritos.css">
+    <!--Ícones Material Design-->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <!-- Icones Remix -->
+    <link rel="stylesheet" href="css/remixicon/remixicon.css">
+</head>
+
+<body>
+    <!-- App root element -->
+    <div id="app">
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+
+            <!-- TAB BAR-->
+            <div id="menuPrincipal" class="toolbar toolbar-bottom">
+                <div class="toolbar-inner display-flex">
+                    <a href="/index/" class="tab-link link">
+                        <i class="ri-home-5-line"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="/link2/" class="tab-link link">
+                        <i class="ri-search-2-line"></i>
+                        <span>Busca</span>
+                    </a>
+                    <a href="/favoritos/" class="tab-link link active">
+                        <i class="ri-heart-3-line"></i>
+                        <span>Favoritos</span>
+                    </a>
+                    <a href="/link4/" class="tab-link link">
+                        <i class="ri-user-line"></i>
+                        <span>Usuário</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="favoritos" class="page color-theme-blue">
+                <!-- NAV TOPO-->
+                <div class="top-nav">
+                    <h1 class="title-logo"><span>Favoritos</span></h1>
+                    <a href="/carrinho/" class="btn-cart" data-count="0">
+                        <i class="ri-shopping-bag-line"></i>
+                    </a>
+                </div>
+
+                <!-- Scrollable page content -->
+                <div class="page-content">
+                    <div id="conteudo-favoritos" class="block no-margin-top">
+                        <!-- Conteúdo dos favoritos -->
+                        <ul id="lista-produtos">
+                            <li class="li">
+                                <i id="core1" class="core">❤</i>
+                                <img src="img/airpod.png" alt="Airpod">
+                                <h2>Airpod</h2>
+                                <p>Rating: 4.5</p>
+                                <p>Principal Característica: Branco</p>
+                                <p>Preço: R$ 229.99</p>
+                            </li>
+                            <li>
+                                <i id="core2" class="core">❤</i>
+                                <img src="img/iphone.png" alt="Iphone 15 Pro Max">
+                                <h2>Iphone 15 Pro Max</h2>
+                                <p>Rating: 3.8</p>
+                                <p>Principal Característica: 2 TB</p>
+                                <p>Preço: R$ 14999.99</p>
+                            </li>
+                            <li>
+                                <i id="core3" class="core">❤</i>
+                                <img src="img/xbox.png" alt="Xbox Series X">
+                                <h2>Xbox Series X</h2>
+                                <p>Rating: 4.5</p>
+                                <p>Principal Característica: 1 TB</p>
+                                <p>Preço: R$ 3799.99</p>
+                            </li>
+                            <li>
+                                <i id="core4" class="core">❤</i>
+                                <img src="img/macbook.png" alt="MacBook Pro 2023">
+                                <h2>MacBook Pro 2023</h2>
+                                <p>Rating: 4.8</p>
+                                <p>Principal Característica: 512 GB 16GB RAM</p>
+                                <p>Preço: R$ 8699.99</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+</body>
+
+</html>
